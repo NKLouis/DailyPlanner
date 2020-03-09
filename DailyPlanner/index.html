@@ -29,7 +29,26 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
+
+
       <!-- Timeblocks go here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+      var date = moment("Monday, March 9th 2020, 5:04:03 pm");
+      var eDisplayMoment = document.getElementById("currentDay");
+      eDisplayMoment.innerHTML= (moment().format("dddd, MMMM Do YYYY, h:mm:ss a")); 
+     
+
+
+
+     
+
+
+
+
+
+
+    </script>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
