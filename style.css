@@ -3,7 +3,7 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
   font-family: 'Roboto Mono', monospace;
   font-family: 'Caveat', cursive;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1;
     
   }
@@ -25,8 +25,8 @@ body {
   textarea{
     background-color:white ;
     border: none;
-    resize: none;
-    color: #f7f3f5;
+    color: rgb(56, 55, 55);
+    font-weight: bolder ;
     border-left: 1px solid black;
     padding: 10px;
   }
@@ -58,19 +58,19 @@ body {
   
   .present {
     background-color: #e2e79e;
-    color: white;
+    color:rgb(75, 72, 72);
   }
   
   .future {
     background-color: #95f0ac;
-    color: white;
+    color:rgb(235, 49, 25);
   }
   
   .saveBtn {
     border-left: 1px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color:rgb(228, 238, 134);
+    background-color:rgb(233, 245, 124);
 
   }
 

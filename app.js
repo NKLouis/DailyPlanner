@@ -1,4 +1,4 @@
-//Global variables
+//Global variable
 var now = moment()
 
 
@@ -13,8 +13,7 @@ $(document).ready(function () {
     }
 });
 
-
-for (i = 0; i < 9; i++) {
+    for (i = 0; i < 9; i++) {
 
     
     var rowBlocks = $('<div>').addClass('row');
@@ -27,7 +26,7 @@ for (i = 0; i < 9; i++) {
 
     var textBlocks = $('<textarea>').css('width', '85%');
 
-// added a save icon
+ // added a save icon
     var saveButton = $('<button>').addClass('saveBtn').html('<i class="fas fa-save"></i>');
 
     $(timeBlocks).after(textBlocks);
@@ -45,10 +44,10 @@ for (i = 0; i < 9; i++) {
      else if (now.isAfter(moment('9:00 AM', 'hh:mm A').add(i, 'hours'), 'hour')) {
         $(textBlocks).addClass('past');
     }
+};
 
-}
 
-// Clicking a save icon will save the content to localStorage.
+// Clicking a save icon will save the lastest content to localStorage.
 
  $('.saveBtn').on('click', function () {
 
