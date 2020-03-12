@@ -1,0 +1,81 @@
+body {
+  font-family: 'Kelly Slab', cursive;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  line-height: 1;
+    
+  }
+
+  .jumbotron {
+    text-align: center;
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: 3px solid black;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-pure-color-watercolor-graffiti-gradient-background-board-design-board-design-image_66713.jpg);
+  
+  }
+
+  .container {
+  background-color: rgb(212, 236, 229);
+  margin-bottom: 3rem;
+  }
+  
+  textarea{
+    background-color:white ;
+    border: none;
+    resize: none;
+    color: #f7f3f5;
+    border-left: 1px solid black;
+    padding: 10px;
+  }
+  
+  .description{
+    white-space: pre-wrap;
+  }
+  
+  .time-block{
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;;
+  }
+  
+  .hour {
+    color: black;
+    border-top: 1px dashed black;
+  }
+  
+  .past {
+    background-color: rgb(253, 159, 125);
+    color: white;
+  }
+  
+  .present {
+    background-color: #e2e79e;
+    color: white;
+  }
+  
+  .future {
+    background-color: #95f0ac;
+    color: white;
+  }
+  
+  .saveBtn {
+    border-left: 1px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color:rgb(228, 238, 134);
+
+  }
+
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
+  
