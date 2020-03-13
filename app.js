@@ -7,18 +7,21 @@ $(document).ready(function () {
     hourArr = $('.hour').toArray()
     for (i = 0; i < hourArr.length; i++) {
 
-     $(hourArr[i]).appendchild('textarea').text(localStorage.getItem($(hourArr[i]).attr('data-time')))
+     $(hourArr[i]).siblings('textarea').text(localStorage.getItem($(hourArr[i]).attr('data-time')))
     }
 });
     for (i = 0; i < 9; i++) {
 
     
     var rowBlocks = $('<div>').addClass('row');
+    
     $('.container').append(rowBlocks);
+
 
     var timeBlocks = $('<div>').addClass('hour').text(moment('9:00 AM', 'hh:mm A').add(i, 'hours').format('hA')).css('width', '10%');
 
     timeBlocks.attr('data-time', moment('9:00 AM', 'hh:mm A').add(i, 'hours').format('hA'));
+
     $(rowBlocks).append(timeBlocks);
 
     var textBlocks = $('<textarea>').css('width', '85%');
@@ -35,11 +38,11 @@ $(document).ready(function () {
         $(textBlocks).addClass('future');
     } 
      else if (now.isAfter(moment('9:00 am', 'hh:mm A').add(i, 'hours'),)) {
-
+         
         $(textBlocks).addClass('past');
     }
 
-    // added a save icon
+    // added a save icon to saveButton
     var saveButton = $('<button>').addClass('saveBtn').html('<i class="fas fa-save"></i>');
 
     $(timeBlocks).after(textBlocks);
@@ -53,5 +56,5 @@ $(document).ready(function () {
 
  $('.saveBtn').on('click', function () {
 
-    localStorage.setItem($(this).appendchild('div.hour').attr('data-time'), $(this).siblings('textarea').val())
+    localStorage.setItem($(this).siblings('div.hour').attr('data-time'), $(this).siblings('textarea').val())
 });
